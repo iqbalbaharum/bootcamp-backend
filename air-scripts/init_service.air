@@ -1,0 +1,7 @@
+(xor
+    (seq
+        (call relay (academy_backend "init_service") [] result)
+        (call %init_peer_id% (returnService "run") [result])
+    )
+    (call %init_peer_id% (returnService "run") [%last_error%])
+)

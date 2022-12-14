@@ -1,0 +1,12 @@
+[package]
+name = "academy_backend"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+marine-rs-sdk = { version = "0.7.1", features = ["logger"]}
+log = "0.4.17"
+marine-sqlite-connector = "0.6.0"
+serde_json = "1.0.89"

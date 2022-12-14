@@ -1,0 +1,27 @@
+{
+  "services": {
+    "academy-backend": {
+      "dependencies": ["sqlite3", "academy_backend"],
+      "node": "12D3KooWD7CvsYcpF9HE9CCV9aY3SJ317tkXVykjtZnht2EbzDPm"
+    }
+  },
+  "modules": {
+    "sqlite3": {
+      "file": "artifacts/sqlite3.wasm",
+      "config": {
+        "preopened_files": ["/tmp"],
+        "mapped_dirs": { "tmp": "/tmp" }
+      }
+    },
+    "academy_backend": {
+      "file": "artifacts/bazaar_ex.wasm",
+      "config": {}
+    }
+  },
+  "scripts": {
+    "init_service": {
+      "file": "air-scripts/init_service.air"
+    }
+  },
+  "script_storage": {}
+}

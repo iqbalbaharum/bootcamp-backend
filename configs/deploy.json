@@ -1,0 +1,10 @@
+{
+  "academy-backend": {
+    "modules": [
+      {
+        "name": "academy_backend",
+        "path": "./artifacts/academy_backend.wasm"
+      }
+    ]
+  }
+}
